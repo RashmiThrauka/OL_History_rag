@@ -14,9 +14,7 @@ Built with real Grade 10 and Grade 11 English medium history textbooks published
 
 ## 🏗️ Architecture
 PDF Textbooks → Text Extraction → Chunking → Embeddings → ChromaDB
-
 ↓
-
 User Question → Embed Query → Retrieve Top-5 Chunks → LLM → Cited Answer
 
 ---
@@ -31,17 +29,6 @@ User Question → Embed Query → Retrieve Top-5 Chunks → LLM → Cited Answer
 | Vector Store | ChromaDB |
 | LLM | GPT-4o-mini |
 | Frontend | Streamlit |
-
----
-
-## 📁 Project Structure
-
-history-rag-project/
-├── extract.py        # PDF text extraction
-├── ingest.py         # Chunking, embedding, ChromaDB storage
-├── app.py            # Streamlit frontend (in progress)
-├── .env              # API keys (not committed)
-└── chroma_db/        # Local vector store (auto-generated)
 
 ---
 
