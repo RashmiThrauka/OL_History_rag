@@ -33,31 +33,13 @@ User Question → Embed Query → Retrieve Top-5 Chunks → LLM → Cited Answer
 ---
 
 ## 📁 Project Structure
+
 history-rag-project/
 ├── extract.py        # PDF text extraction
 ├── ingest.py         # Chunking, embedding, ChromaDB storage
 ├── app.py            # Streamlit frontend (in progress)
 ├── .env              # API keys (not committed)
 └── chroma_db/        # Local vector store (auto-generated)
----
-
-## 🚀 How To Run
-
-1. Clone the repository
-2. Install dependencies
-```bash
-pip install openai chromadb pypdf langchain langchain-openai langchain-community streamlit python-dotenv
-```
-3. Add your OpenAI API key to `.env`
-4. Place Grade 10 and Grade 11 Sri Lanka history textbooks (PDF) in the root directory
-5. Run ingestion
-```bash
-python ingest.py
-```
-6. Launch the app
-```bash
-streamlit run app.py
-```
 
 ---
 
@@ -80,8 +62,3 @@ streamlit run app.py
 - [ ] Deploy to Streamlit Community Cloud
 
 ---
-
-## 👤 Author
-
-Built as a portfolio project by a second year Data Science undergraduate.  
-Use case inspired by real classroom experience with Sri Lankan O/L History curriculum.
