@@ -14,7 +14,9 @@ Built with real Grade 10 and Grade 11 English medium history textbooks published
 
 ## 🏗️ Architecture
 PDF Textbooks → Text Extraction → Chunking → Embeddings → ChromaDB
+
 ↓
+
 User Question → Embed Query → Retrieve Top-5 Chunks → LLM → Cited Answer
 
 ---
